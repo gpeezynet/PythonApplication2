@@ -1,6 +1,10 @@
-operation = input("Would you like to +, -, *, / numbers?: ")
-first = float(input("first number: "))
-second = float(input("second number: "))
+#
+# Two sample answers for George
+#
+
+operation = input("Would you like to +, -, *, / numbers?: ")   # Ask what the user wants to do
+first = float(input("first number: "))                         # Get the frist number from the user
+second = float(input("second number: "))                       # Get the second number from the user
 
 # One way is to use "if-elif-else" statements, "elif" is short for "else if"
 print("Using if statements...")
@@ -15,7 +19,8 @@ elif operation == "/":
 else:
    print("You chose and invalid operation")
 
-print("Using a match (or 'switch') statement...")
+# Another way is to use match (called 'switch' in C#)
+print("Using a match statement...")
 match operation:
    case "+":
       print(float(first) + float(second))
